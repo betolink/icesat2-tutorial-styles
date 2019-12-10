@@ -1,0 +1,18 @@
+{% extends "templates/login.html" %}
+{% set announcement = '' %}
+
+{% block main %}
+<div class="container text-center pangeo">
+    <img src="{{static_url("extra-assets/images/banner-logo.png")}}" alt='Logo'>
+    <h2>{{ pangeo_hub_subtitle }}</h2>
+    <p>
+      {% if pangeo_welcome %}
+      {{ (pangeo_welcome | safe) }}
+      {% else %}
+      Welcome to NSIDC's JupyterHub. For more information about NSIDC,
+      visit <a href="https://nsidc.org">nsidc.org</a>.
+      {% endif %}
+    </p>
+</div>
+{{ super() }}
+{% endblock %}
