@@ -47,11 +47,15 @@
     background-color: #00a3b0;
 }
 
+#login-main {
+  height: auto !important;
+}
+
 #login-main .auth-form-header {
     background: #5EB130 !important;
 }
 #login-main .container {
-    height: 220px;
+   padding-top: 20px !important;
 }
 
 .btn-jupyter {
