@@ -49,9 +49,10 @@
 
 #login-main .auth-form-header {
     background: #5EB130 !important;
-    height: 0px;
 }
-
+#login-main .container {
+    height: 220px;
+}
 
 .btn-jupyter {
     color: #fff;
